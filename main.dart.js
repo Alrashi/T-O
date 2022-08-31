@@ -19196,10 +19196,8 @@ a9u:function a9u(a){this.a=a},
 a9x:function a9x(a){this.a=a},
 a9F:function a9F(a,b){this.a=a
 this.b=b},
-a9v:function a9v(a,b){this.a=a
-this.b=b},
-a9s:function a9s(a,b){this.a=a
-this.b=b},
+a9v:function a9v(a){this.a=a},
+a9s:function a9s(a){this.a=a},
 jR:function jR(){},
 Lr:function Lr(){},
 J5:function J5(a,b){this.a=a
@@ -64481,20 +64479,17 @@ s.r.seC(0,"")
 s.d=0},
 $S:0}
 A.a9F.prototype={
-$0(){var s,r=this.a
-if(r.gqC()==null)r.rW()
+$0(){var s=this.a
+if(s.gqC()==null)if(!s.Q){s.rW()
+s.Q=!0}else A.fc("you already pressed once")
 else{s=this.b
-A.amq(new A.a9v(r,s),s,t.z)}},
+A.amq(new A.a9v(s),s,t.z)}},
 $S:0}
 A.a9v.prototype={
-$1(a){return A.ah3(A.b([A.aeo(B.Lj,new A.a9s(this.a,this.b),null)],t.F),B.Li,B.u9,B.Lk)},
+$1(a){return A.ah3(A.b([A.aeo(B.Lj,new A.a9s(this.a),null)],t.F),B.Li,B.u9,B.Lk)},
 $S:145}
 A.a9s.prototype={
-$0(){var s=this.a
-s.Q=!0
-A.fc("you already pressed once")
-if(s.Q){A.fD(this.b,!1).kY(0,null)
-s.Q=!1}},
+$0(){A.fD(this.a,!1).kY(0,null)},
 $S:0}
 A.jR.prototype={
 gp(a){return this.b},
